@@ -20,7 +20,7 @@ const uploadsDir = path.join(__dirname, process.env.UPLOADS_DIR || "uploads/cvs"
 // Middleware
 // Permitir CORS para tu frontend
 const corsOptions = {
-  origin: ['https://busquidy-1756b.web.app/' || process.env.FRONTEND_URL],
+  origin: process.env.FRONTEND_URL || 'https://busquidy-1756b.web.app/',
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: [
     "Origin",
