@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 // Importar Firebase
 import { app } from "./config/firebase";
 
-// console.log("Firebase App initialized:", app);
+console.log("Firebase App initialized:", app);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
